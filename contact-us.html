@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <style>
+      h1 {
+        color: rgb(236, 224, 224);
+        border-top: solid rgb(192, 162, 189);
+      }
+
+    </style>
+    <title>Contact Us</title>
+    <meta name="description" content="HTML5 Forms">
+    <meta name="author" content="Brenda Izaguirre">
+
+  </head>  
+  <body>
+    <header>
+      <h1>Popular Films/Questions</h1>
+    </header>
+    <table border="1" cellpadding="2">
+    <caption>Popular Films</caption>
+    <thead>
+      <tr>
+        <th>&nbsp;TV/Movies</th>
+        <th scope="col" abbr="Column 1" id="col1">Title</th>
+        <th scope="col" abbr="Column 2" id="col2">Year Released</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">TV Show</th>
+        <td headers="col1">The Golden Girls</td>
+        <td headers="col2">1985-1992</td>
+      </tr>
+      <tr>
+        <th scope="row">Movie</th>
+        <td headers="col1">The Proposal</td>
+        <td headers="col2">2009</td>
+      </tr>
+      <tr>
+        <th scope="row">TV Show</th>
+        <td headers="col1">Hot in Cleveland</td>
+        <td headers="col2">2010-2015</td>
+      </tr>
+      <tr>
+        <th scope="row">TV Show</th>
+        <td headers="col1">The Golden Palace</td>
+        <td headers="col2">1992-1993</td>
+      <tr>
+        <th scope="row">Movie</th>
+        <td headers="col1">The Lorax</td>
+        <td headers="col2">2012</td>
+      </tr>
+    </tbody>
+  </table>
+    <main>
+      <nav>
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h2>Send us a question!</h2>
+        <fieldset>
+            <legend>Contact Us</legend>
+          <h3>Personal Information</h3>
+            <form id="myMailerForm" action="mailto:e3637781@student.dcccd.edu" method="post">
+            <p>
+              <label title="Enter your full name.">Name <input type="text" name="Name" placeholder="Name"></label>
+            </p>
+            <p>
+              <label title="Enter your email address.">E-Mail <input type="text" name="Email" placeholder="Email"></label>
+            </p>
+            <p>
+              <label title="Select your program.">Question About</label>
+              <select name="programID">
+                <option value="">&larr;&nbsp;Select Topic&nbsp;&rarr;</option>
+                <option value="1">Donations</option>
+                <option value="2">Career Opportunities</option>
+                <option value="3">Filmography</option>
+                <option value="4">Futher Reading</option>
+                <option value="5">Other</option>
+              </select>
+            <p>
+              <label title="Select to be contacted."><input type="checkbox" name="contact-me"> Subscrible to our monthly news letter!</label>
+            </p>
+            <h3>Message</h3>
+            <p>
+              <label title="Select if you have a question.">Very Satisfied<input type="radio" name="request"></label>
+              <br>
+              <label title="Select if you have a comment.">Neutral<input type="radio" name="request"></label>
+              <br>
+              <label title="Select if you have a comment.">Very Unsatisfied<input type="radio" name="request"></label>
+              <br>
+              <label title="Select if you have a comment.">On Point. NO CAP<input type="radio" name="request"></label>
+            </p>
+            <p>
+              <label for="message">Give Us Your Feedback!</label><br>
+              <textarea id="message" name="message"></textarea>
+            </p>
+            <input type="submit" name="submit" value="Send Mail">
+          </form>
+          </fieldset>
+      </section>
+    </main>
+  </body>
+
+</html>
